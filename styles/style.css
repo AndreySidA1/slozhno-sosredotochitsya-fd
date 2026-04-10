@@ -47,13 +47,13 @@
   position: absolute;
   top: 10px;
   right: 19px;
-  font-family: var(--text-font), sans-serif;
+  font-family: var(--text-font), monospace;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 0px;
   color: var(--accent-color-main);
-  display: flex;
+  display: var(--show-rec);
   align-items: center;
   gap: 10px;
 }
@@ -82,11 +82,12 @@
   background-color: transparent;
   color: var(--accent-color-main);
   text-transform: lowercase;
-  font-family: var(--text-font), sans-serif;
+  font-family: var(--text-font), monospace;
   border: 1px solid transparent;
   font-size: 18px;
   font-weight: 400;
   padding-inline: 13px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -108,7 +109,7 @@
 }
 
 .title-text {
-  font-family: var(--text-font), Arial, sans-serif;
+  font-family: var(--text-font), Arial, monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 83%;
@@ -119,7 +120,7 @@
 }
 
 .title-decor {
-  font-family: var(--text-font), Arial, sans-serif;
+  font-family: var(--text-font), Arial, monospace;
   background-color: var(--accent-color);
   color: var(--color-text-main);
   justify-self: stretch;
@@ -138,12 +139,12 @@
 
 .section {
   padding: 0 10px 0 10px;
-  font-family: var(--text-font), Arial, sans-serif;
+  font-family: var(--text-font), Arial, monospace;
 }
 
 .section_card-title {
   font-size: 18px;
-  line-height: 23.4px;
+  line-height: 130%;
   font-weight: 700;
   margin: 0;
   color: var(--accent-color-main);
@@ -160,13 +161,13 @@
   font-size: 18px;
   line-height: 23.4px;
   background-color: var(--accent-color);
-  color: var(--background-color);
+  color: var(--color-text-main);
   font-weight: 700;
   margin-bottom: 10px;
 }
 
 .text_paragraph {
-  font-family: var(--text-font), Arial, sans-serif;
+  font-family: var(--text-font), Arial, monospace;
   font-size: 18px;
   line-height: 23.4px;
   color: var(--color-text);
